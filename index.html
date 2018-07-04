@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content"width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Change Calculator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css"/>
+  </head>
+  <body>
+    <section class="hero is-success is-bold">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title has-text-centered">Change Calculator</h1>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="columns is-mobile">
+          <div class="column">
+            <p id="amount-due-title">How much is due for the sale?</p>
+            <input class="input is-success is-medium is-rounded" id="amount-due" placeholder="$0.00"></input>
+          </div>
+          <div class="column">
+            <p id="amount-recieved-title">How much has the customer given you?</p>
+            <input class="input is-success is-medium is-rounded" id="amount-received" placeholder="$0.00"></input>
+          </div>
+        </div>
+        <div class="level">
+          <div class="level-item">
+            <button class="button is-success" id="calculate-change" onclick="handleClickEvent()">Calculate Change</button>
+          </div>
+        </div>
+        <div class="tile is-ancestor">
+          <div class="tile is-parent">
+            <article class="tile is-child notification is-success">
+              <nav class="level is-mobile">
+                <div class="level-item has-text-centered">
+                  <div>
+                    <p class="heading">Dollars</p>
+                    <p class="title" id="dollars-output">0</p>
+                  </div>
+                </div>
+                <div class="level-item has-text-centered">
+                  <div>
+                    <p class="heading">Quarters</p>
+                    <p class="title" id="quarters-output">0</p>
+                  </div>
+                </div>
+                <div class="level-item has-text-centered">
+                  <div>
+                    <p class="heading">Dimes</p>
+                    <p class="title" id="dimes-output">0</p>
+                  </div>
+                </div>
+                <div class="level-item has-text-centered">
+                  <div>
+                    <p class="heading">Nickels</p>
+                    <p class="title" id="nickels-output">0</p>
+                  </div>
+                </div>
+                <div class="level-item has-text-centered">
+                  <div>
+                    <p class="heading">Pennies</p>
+                    <p class="title" id="pennies-output">0</p>
+                  </div>
+                </div>
+              </nav>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer is-success">
+      <div class="container">
+        <div class="content has-text-centered">
+          <p>
+            <strong>Change Calculator</strong> coded by <a href="https://robertmakes.com">Robert Barnett</a> for a class project at <a href="http://origincodeacademy.com">Origin Code Academy</a>.
+          </p>
+          <p>
+            Styled using <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is licensed
+            <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
+            is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+          </p>
+        </div>
+      </div>
+    </footer>
+  <script src="main.js"></script>
+  </body>
+</html>
